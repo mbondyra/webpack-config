@@ -2,7 +2,7 @@ import React from 'react'
 import { hot } from 'react-hot-loader'
 import WebFont from 'webfontloader'
 const Warning = React.lazy(() => import('./warning'))
-
+import Button from './components/Button'
 class App extends React.Component {
   state = {
     count: 0
@@ -22,6 +22,7 @@ class App extends React.Component {
     }
     return (
       <main>
+        <Button>Hello!</Button>
         <h1>Hello world</h1>
         <h2 className={this.state.count > 10 ? 'warning' : null}>
           Count: {this.state.count}

@@ -13,6 +13,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
   }
+  * {
+    box-sizing: border-box;
+  }
 `
 
 if (process.env.NODE_ENV === 'development') {
