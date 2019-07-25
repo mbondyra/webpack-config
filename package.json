@@ -22,7 +22,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
     "dev": "webpack-dev-server --open --config webpack.config.dev.js",
-    "dev:hot": "webpack-dev-server --open --hot --config webpack.config.dev.js"
+    "dev:hot": "yarn dev --hot"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
