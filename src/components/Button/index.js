@@ -41,9 +41,9 @@ const StyledButton = styled.button`
   }
 `
 
-const Button = ({ children, type, handleClick }) => {
+const Button = ({ children, type, onClick }) => {
   return (
-    <StyledButton type={type} onClick={handleClick}>
+    <StyledButton type={type} onClick={onClick}>
       {children}
     </StyledButton>
   )
@@ -52,7 +52,7 @@ const Button = ({ children, type, handleClick }) => {
 Button.propTypes = {
   type: PropTypes.string,
   children: PropTypes.node,
-  handleClick: PropTypes.func
+  onClick: PropTypes.func
 }
 
 Button.defaultProps = {
