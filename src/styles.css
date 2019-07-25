@@ -1,7 +1,10 @@
-html{
+html {
   color: blueviolet;
+  background: blue;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
-.warning{
+.warning {
   color: red;
 }

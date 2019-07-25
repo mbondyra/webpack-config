@@ -1,10 +1,19 @@
 import React from 'react'
 import { hot } from 'react-hot-loader'
-
+import WebFont from 'webfontloader'
 const Warning = React.lazy(() => import('./warning'))
+
 class App extends React.Component {
   state = {
     count: 0
+  }
+
+  componentDidMount() {
+    WebFont.load({
+      google: {
+        families: ['Roboto']
+      }
+    })
   }
 
   render() {

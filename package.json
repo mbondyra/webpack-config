@@ -37,8 +37,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack-dev-server --open --config webpack.config.dev.js",
-    "dev:hot": "yarn dev --hot",
+    "dev": "webpack-dev-server --hot --open --config webpack.config.dev.js",
     "test": "jest",
     "format": "pretty-quick",
     "lint": "eslint ./"
@@ -53,6 +52,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-hot-loader": "^4.8.5"
+    "react-hot-loader": "^4.8.5",
+    "webfontloader": "^1.6.28"
   }
 }
