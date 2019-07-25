@@ -8,8 +8,7 @@ import App from './App'
 
 const GlobalStyle = createGlobalStyle`
   body {
-    color: blueviolet;
-    background: blue;
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
   }
