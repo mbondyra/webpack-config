@@ -18,7 +18,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack-dev-server --config webpack.config.dev.js"
+    "dev": "webpack-dev-server --open --config webpack.config.dev.js"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
