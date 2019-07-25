@@ -9,11 +9,11 @@ class App extends React.Component {
 
   render() {
     if (this.state.count > 20) {
-      throw new Error("BOOM")
+      throw new Error('BOOM')
     }
     return (
-      <div>
-        <h1>Hello woedsfdsrld</h1>
+      <main>
+        <h1>Hello world</h1>
         <h2 className={this.state.count > 10 ? 'warning' : null}>
           Count: {this.state.count}
         </h2>
@@ -32,7 +32,7 @@ class App extends React.Component {
             <Warning />
           </React.Suspense>
         )}
-      </div>
+      </main>
     )
   }
 }
