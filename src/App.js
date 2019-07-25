@@ -8,6 +8,9 @@ class App extends React.Component {
   }
 
   render() {
+    if (this.state.count > 20) {
+      throw new Error("BOOM")
+    }
     return (
       <div>
         <h1>Hello woedsfdsrld</h1>
