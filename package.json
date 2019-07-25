@@ -16,9 +16,13 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-dynamic-import-node": "^2.2.0",
     "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.8.0",
     "jest-dom": "^3.2.2",
+    "prettier": "^1.17.1",
+    "pretty-quick": "^1.10.0",
     "react-testing-library": "^7.0.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.31.0",
@@ -31,7 +35,8 @@
     "build": "webpack --config webpack.config.prod.js",
     "dev": "webpack-dev-server --open --config webpack.config.dev.js",
     "dev:hot": "yarn dev --hot",
-    "test": "jest"
+    "test": "jest",
+    "format": "pretty-quick"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
