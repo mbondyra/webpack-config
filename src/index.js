@@ -9,10 +9,17 @@ import App from './App'
 const GlobalStyle = createGlobalStyle`
   body {
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Luckiest Guy', sans-serif;
     font-weight: 300;
+    margin: 0;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.4s;
   }
   * {
+    font-family: 'Luckiest Guy', sans-serif;
     box-sizing: border-box;
   }
 `
