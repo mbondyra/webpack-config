@@ -12,7 +12,7 @@ describe('components/Button', () => {
   it('Sets proper background colors to secondary button', () => {
     const wrapper = mount(<Button type="SECONDARY">Creating...</Button>)
     const element = wrapper.find('button')
-    expect(element).toHaveStyleRule('background', colors.yellow)
+    expect(element).toHaveStyleRule('background', colors.orange)
   })
 
   it('calls onClick correctly', () => {

@@ -8,14 +8,14 @@ const StyledButton = styled.button`
   align-items: center;
   justify-content: center;
   padding: 0 16px;
-  height: 60px;
+  height: 40px;
   width: 100%;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   white-space: nowrap;
   color: ${colors.white};
   border: 0;
-  border-bottom-width: 10px;
+  border-bottom-width: 5px;
   border-bottom-style: solid;
   ${props =>
     props.type === 'PRIMARY' &&
@@ -26,8 +26,8 @@ const StyledButton = styled.button`
   ${props =>
     props.type === 'SECONDARY' &&
     `
-    background: ${colors.yellow};
-    border-bottom-color: ${colors.orange};
+    background: ${colors.orange};
+    border-bottom-color: #c07514;;
   `}
   cursor: pointer;
   transition: filter 0.4s;
