@@ -20,6 +20,7 @@
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-dynamic-import-node": "^2.2.0",
+    "concurrently": "^4.1.1",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.1",
     "eslint": "^5.16.0",
@@ -30,6 +31,7 @@
     "jest": "^24.8.0",
     "jest-dom": "^3.2.2",
     "jest-styled-components": "^6.3.1",
+    "netlify-lambda": "^1.5.1",
     "prettier": "^1.17.1",
     "pretty-quick": "^1.10.0",
     "react-axe": "^3.1.0",
@@ -41,8 +43,10 @@
     "webpack-merge": "^4.2.1"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack-dev-server --hot --open --config webpack.config.dev.js",
+    "build": "netlify-lambda build lambda; webpack --config webpack.config.prod.js",
+    "dev:backend": "netlify-lambda serve lambda",
+    "dev:frontend": "webpack-dev-server --hot --open --config webpack.config.dev.js",
+    "dev": "concurrently \"yarn dev:backend\" \"yarn dev:frontend\"",
     "test": "jest",
     "format": "pretty-quick",
     "lint": "eslint ./",
@@ -57,6 +61,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "@storybook/addon-knobs": "^5.0.11",
+    "async-request": "^1.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
