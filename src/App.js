@@ -8,7 +8,7 @@ const App = () => {
   useEffect(() => {
     WebFont.load({
       google: {
-        families: ['Luckiest Guy']
+        families: ['Roboto']
       }
     })
   }, [])
